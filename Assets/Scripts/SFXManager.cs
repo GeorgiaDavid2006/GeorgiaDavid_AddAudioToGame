@@ -50,7 +50,8 @@ public class SFXManager : MonoBehaviour
     //called in the AsteroidDestroy script
     public void AsteroidExplosion()
     {
-        SFXaudioSource.PlayOneShot(asteroidExplosion);
+        SFXaudioSource.pitch = Random.Range(0.5f, 2f);
+        SFXaudioSource.PlayOneShot(asteroidExplosion, Random.Range(0.5f, 2f));
     }
 
     
